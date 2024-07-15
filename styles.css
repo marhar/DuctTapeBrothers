@@ -1,0 +1,146 @@
+/* styles.css for Coding Blog */
+
+@font-face {
+    font-family: 'ComicMono';
+    src: url('/fonts/ComicMono.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* headers: noto sans ??? */
+body {
+    /*font-face: 'Inter';*/
+    font-size: 18px;
+    font-weight: 600; /* Semi-bold weight */
+}
+
+:root {
+  --main-font: 'Inter', sans-serif;
+  --code-font: 'Fira Code', monospace;
+  --code-size: 14px;
+  --bg-color: #f8f9fa;
+  --text-color: #333;
+  --link-color: #0366d6;
+  --code-bg: #f6f8fa;
+  --code-color: #24292e;
+  --border-color: #e1e4e8;
+  --header-color: #2f3542;
+}
+
+body {
+  font-family: var(--main-font);
+  /*font-family: 'Roboto', sans-serif;*/
+  /* font-family: 'ComicMono', monospace;*/
+  font-weight: 500; /* Semi-bold weight */
+
+  line-height: 1.1;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: var(--header-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--header-color);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+pre, code {
+  font-family: var(--code-font);
+  font-size: var(--code-size);
+  background-color: var(--code-bg);
+  color: var(--code-color);
+  border-radius: 3px;
+  line-height: 1.0;
+  padding: 0.2em 0.4em;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1em;
+  margin-left: 0;
+  font-style: italic;
+  color: #6a737d;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+th, td {
+  border: 1px solid var(--border-color);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--code-bg);
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e1e4e8;
+  color: #24292e;
+  padding: 0.2em 0.6em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  margin-right: 0.5em;
+}
+
+.post-meta {
+  color: #6a737d;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  
+  h1 {
+  }
+}
