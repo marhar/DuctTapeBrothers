@@ -1,15 +1,4 @@
-/* styles.css for Coding Blog */
 
-@font-face {
-    font-family: 'ComicMono';
-    src: url('/fonts/ComicMono.ttf') format('ttf');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
-
-/* headers: noto sans ??? */
 body {
     /*font-face: 'Inter';*/
     font-size: 18px;
@@ -17,7 +6,7 @@ body {
 }
 
 :root {
-  --main-font: 'Inter', sans-serif;
+  --main-font: 'Soto Sans', sans-serif;
   --code-font: 'Fira Code', monospace;
   --code-size: 14px;
   --bg-color: #f8f9fa;
@@ -31,8 +20,6 @@ body {
 
 body {
   font-family: var(--main-font);
-  /*font-family: 'Roboto', sans-serif;*/
-  /* font-family: 'ComicMono', monospace;*/
   font-weight: 500; /* Semi-bold weight */
 
   line-height: 1.1;
