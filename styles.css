@@ -9,7 +9,7 @@ body {
   --main-font: 'Soto Sans', sans-serif;
   --code-font: 'Fira Code', monospace;
   --code-size: 14px;
-  --bg-color: #f8f9fa;
+  --bg-color: light-blue;
   --text-color: #333;
   --link-color: #0366d6;
   --code-bg: #f6f8fa;
@@ -25,7 +25,7 @@ body {
   line-height: 1.1;
   color: var(--text-color);
   background-color: var(--bg-color);
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
 }
